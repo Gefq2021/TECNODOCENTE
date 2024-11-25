@@ -1,0 +1,259 @@
+/* Estilo general para el navbar */
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  /* background-color: #343a40; */
+  background-color: rgb(66, 60, 60);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  /* margin: 0 15px; */
+}
+
+nav ul li:hover {
+  border: 1px solid #ae51b4;
+  border-radius: 15px;
+}
+
+li {
+  list-style: none;
+  border-radius: 15px;
+}
+
+
+nav ul li a,
+.nav-login li>a {
+  color: #ffffff;
+  /* Blanco */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  background-color: rgb(161, 122, 233);
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+  /* Azul oscuro en hover */
+}
+
+.nav-login li a {
+  /* height: 100%; */
+  color: #ffffff;
+  /* Blanco */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  /* border-radius: 0; */
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.li-logo {
+  max-width: 5rem;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.nav-login {
+  margin-left: 1rem;
+}
+
+.login {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(161, 122, 233);
+}
+
+a {
+  margin-top: 0;
+}
+
+.nav-login .usuario {
+  /* height: 4rem; */
+  display: flex;
+  align-items: center;
+  background-color: #218d12;
+  /* border-radius: 15px; */
+}
+
+
+.inicial_usuario {
+  height: 100%;
+  /* border-radius: 15px; */
+}
+
+.inicial_usuario a span {
+  height: 4rem;
+  font-size: 4rem;
+}
+
+.logout {
+  /* height: 4rem; */
+  /* padding: 0; */
+  color: #aa3b4a;
+  background-color: #aa3b4a;
+}
+
+/* Contenedor general */
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenedor <li> con clase usuario */
+.usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaciado entre las dos partes */
+}
+
+
+
+/* Contenedor general */
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenedor <li> con clase usuario */
+.usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaciado entre las dos partes */
+  background-color: #4CAF50; /* Color de fondo ya existente */
+  padding: 5px 10px; /* Ajustar el espaciado interno de li si es necesario */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Contenedor general */
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenedor <li> con clase usuario */
+.usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaciado entre los dos cuadrados */
+  background-color: #4CAF50; /* Color de fondo verde */
+  padding: 5px 10px; /* Ajuste de padding si es necesario */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Contenedor general */
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout:hover {
+  background-color: #d32f2f; /* Cambio de color en hover */
+}
+
+
+
+
+
+
+/* Estilos para el modal de login */
+dialog {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button-sesion {
+  background-color: #28a745;
+  /* Verde vibrante */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-sesion:hover {
+  background-color: #218838;
+  /* Verde oscuro en hover */
+}
+
+#nueva-clave {
+  font-size: 12px;
+  color: #007bff;
+  /* Azul para enlace */
+  text-decoration: none;
+  text-align: center;
+}
+
+#nueva-clave:hover {
+  text-decoration: underline;
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  display: none;
+}

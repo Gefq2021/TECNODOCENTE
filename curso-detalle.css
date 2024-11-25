@@ -1,0 +1,185 @@
+/* Agregar estilos para la sección del curso y el formulario de pago */
+
+h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #834b88;
+}
+
+h3{
+  font-size: 1.74rem;
+  text-align: center;
+  color: rgb(239, 49, 147); 
+}
+
+.curso {
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 1.5rem;
+
+}
+
+.imagen-curso, .curso-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.imagen-curso img, .imagen-curso-item {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 11px;
+  object-fit: cover;
+}
+
+.imagen-curso-item iframe {
+  width: 100%;
+  /* height: auto; */
+  border-radius: 11px;
+  object-fit: cover;
+}
+
+.curso-info .comprar-btn {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#comprarCurso {
+  width: 100%;
+}
+
+.boton-inscripto {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  background-color: #969696;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.comprar {
+  display: none;
+  width: 100%;
+}
+
+.comprar-form {
+  width: 100%;
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.form-left,
+.form-right {
+  width: 100%;
+}
+
+.form-right input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-left input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-left .pago-opciones label {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pago-opciones {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pago-opciones label img {
+  width: 7rem;
+}
+
+/* .form_id {
+  display: none;
+} */
+
+.botones-pagar {
+  padding-top: .5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Estilos del modal */
+.modal {
+  width: 300px;
+  padding: 20px;
+  border: 3px solid #ae51b4;
+  border-radius: 10px;
+  background-color: #00bfff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#modalGracias::backdrop {
+  background-color: rgb(0,0,0,.55);
+}
+
+.contenedor-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.pagar-btn, .cancelar-btn, .modalGracias-btn {
+  width: 50%;
+  height: 40px;
+  background: #9a47a1;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1.25px;
+}

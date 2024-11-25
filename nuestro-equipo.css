@@ -1,0 +1,80 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nuestroEquipo {
+  padding: 5rem;
+  background-color: #40c3ee;
+}
+
+.nuestroEquipo_titulo {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.integrantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  /* grid-template-rows: 80%; */
+  gap: 0.75rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.integrante {
+  padding-bottom: .75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1em 1em 1em 0;
+  background-color: #f2f2f2;
+  border: 2px solid #6b6a6a;
+}
+
+.integrante-imagen {
+  height: 200px;
+  max-width: 100%;
+  border-radius: 1em 1em 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.integrante-imagen img {
+  min-width: 200px;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+
+.integrante-nombre {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6b6a6a;
+}
+
+.integrante-descripcion {
+  padding: 0 .75rem .75rem;
+  height: 220px;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+}
+
+.integrante-descripcion::-webkit-scrollbar {
+  display: none;
+}

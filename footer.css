@@ -1,0 +1,86 @@
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 30%;
+  margin-top: 4rem;
+  padding: 3rem 5rem;
+  background-color: rgb(66, 60, 60);
+  color: aliceblue;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 5rem;
+  /* font-size: 1.25rem; */
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+footer section ul, .redes, .autores {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  list-style-type: none;
+  font-size: .75rem;
+  color: inherit;
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: .75rem;
+}
+footer .container .row-1 .redes strong {
+  padding-bottom: .5rem;
+  color: inherit;
+}
+
+.redes a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: inherit;
+}
+.autores, .autores_items {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.autores_items p {
+  margin: 0;
+}
+
+.row-2 {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid ;
+  font-size: .75rem;
+}
+
+.row-2 p {
+  margin: 0;
+}

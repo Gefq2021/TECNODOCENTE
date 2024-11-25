@@ -1,0 +1,236 @@
+body,
+html {
+  background-image: radial-gradient(circle 767px at 10.2% 22.1%, rgb(221, 128, 227) 0%, rgba(0, 191, 255, 1) 90%);
+  /* background-color: rgb(150, 140, 140); */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* background-color: rgba(196, 206, 211, 0.76); */
+  /* width: 100%; */
+  /* background-color: #948a8a; */
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 10vw;
+  /* color: rgb(50, 5, 54); */
+  background: linear-gradient(to bottom, rgb(66, 60, 60), rgb(150, 140, 140));
+  color: #ffffff;
+  margin: 0;
+  padding: 5rem 0;
+}
+
+h2 {
+  padding: 2rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(252, 249, 249);
+}
+
+/* nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  nav ul li a, .usuario {
+    padding: 20px;
+    background-color: rgb(161, 122, 233);
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    font-size: 35px;
+    border: 1px solid black;
+  }*/
+
+nav ul li a:hover {
+  background-color: beige;
+}
+
+*/
+
+/*.login {
+  padding: 20px;
+  background-color: rgb(161, 122, 233);
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+  font-size: 35px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+*/
+.login:hover {
+  background-color: beige;
+  text-decoration: underline;
+}
+
+
+/* .incial_usuario {
+  background-color: inherit;
+} */
+
+.Imagen_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.Imagen_logo img {
+  border-radius: 15px;
+}
+
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(239, 49, 147);
+}
+
+/* 
+ .Imagenes_cursos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+.botones {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones a {
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba (0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.botones a:hover {
+  transform: scale(1.2);
+}
+
+.volver {
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #ae51b4;
+  color: #29363d;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba (0, 0, 0, .5);
+  /* transition: all .4s ease-in-out; */
+}
+
+.Imagenes_cursos {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: space-around;
+  gap: 0.75rem;
+}
+
+.imagen {
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #ae51b4;
+  border-radius: 11px;
+  gap: 0.5rem;
+}
+
+.imagen-curso {
+  /* width: 100%; */
+  min-height: 200px;
+}
+
+.imagen a {
+  text-decoration: none;
+  /* Elimina el subrayado */
+  color: inherit;
+  /* Hereda el color del texto del elemento contenedor */
+  margin-top: 0;
+  height: 100%;
+}
+
+.imagen a:hover {
+  text-decoration: none;
+  /* Evita el subrayado en hover */
+  color: inherit;
+  /* Mantiene el color del enlace igual */
+}
+
+.a-logeado {
+  font-size: 1rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  gap: 0.5rem;
+}
+
+.a-logeado p1 {
+  text-align: left;
+}
+
+.imagen a div img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 11px;
+  display: block;
+  object-fit: cover;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 11px;
+  display: block;
+  object-fit: cover;
+}
+
+
+.usuario,
+.incial_usuario {
+  background-color: rgb(33, 141, 18);
+  cursor: pointer;
+}
+
+.usuario:hover {
+  background-color: rgb(49, 110, 41);
+}
+
+
+@media (max-width: 768px) {
+  .Imagenes_cursos {
+    width: 100%;
+    /* padding: 0 2rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,123 @@
+
+.usuario_info {
+  background-color: hsla(0, 2%, 47%, 0.39);
+  height: 25%;
+  
+}
+
+h2 {
+  margin: 0;
+  padding-top: 1.5rem;
+  font-size: 3rem;
+  color: #741c7a;
+}
+
+.usuario-datos {
+  margin: 1.5rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5rem;
+  cursor: none;
+}
+
+.imagen-usuario {
+  min-width: 100px;
+  width: 20%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.imagen-usuario img {
+  max-width: 100%;
+}
+
+.imagen-usuario span, strong {
+  color: #652e69;
+}
+
+.informacion-usuario {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+
+}
+
+.informacion-usuario p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.usuario_cursos table {
+  margin: 1.5rem auto;
+
+}
+
+table {
+  /* width: 100%; */
+  max-width: 100%;
+  border: 1px solid #585555;
+  border-collapse: collapse;
+  overflow-x: auto;
+  overflow-y: hidden;
+  table-layout: auto;
+}
+
+th {
+  padding: .75rem 0;
+  text-align: center;
+  border: 1px solid #383636;
+  font-size: 1rem;
+  color: #7c3681;
+  background-color: hsla(0, 2%, 47%, 0.39);
+}
+
+td {
+  padding: .5rem 1rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid #4d4a4a;
+  background-color: hsla(0, 2%, 64%, 0.39);
+}
+
+td img {
+  max-width: 80px;
+  margin: 0 auto;
+  display: flex;
+}
+
+tr:nth-child(even) {
+  background-color: hsla(195, 64%, 58%, 0.733);
+}
+
+.td-imagen:hover .img-curso {
+  transform: scale(2.5)  translateX(20%);
+  z-index: 2;
+}
+
+
+.mensaje-no-cursos {
+  background-color: rgba(168, 222, 240, .35);
+  /* border: 1px solid #f5c6cb;
+  border-radius: 5px; */
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #7c3681;
+}
+
+.img-curso {
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s; /* Transición suave para el efecto de hover */
+}
+
+.mensaje-no-cursos p {
+  margin: 0;
+}
